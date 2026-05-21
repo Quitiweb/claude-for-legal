@@ -4,6 +4,21 @@ Reference agents, skills, and data connectors for the legal workflows we see mos
 
 > **New here?** Start with [QUICKSTART.md](QUICKSTART.md) — install in 60 seconds. This README is the full reference.
 
+> ## 🇪🇸 Adaptación para España (en curso)
+>
+> Este repositorio es un **fork comunitario** de [`claude-for-legal`](https://github.com/anthropics) de Anthropic que está siendo **adaptado al Derecho español y de la UE**. No es una traducción: las fuentes (FTC/SEC/Westlaw → **AEPD, BOE, CENDOJ, EUR-Lex**), las normas (GDPR/CCPA → **RGPD/LOPDGDD**) y conceptos como el *attorney work product* (→ **secreto profesional**, art. 542.3 LOPJ) están reanclados al ordenamiento español.
+>
+> **Estado del piloto:**
+> - ✅ **`proteccion-datos`** — adaptado (RGPD + LOPDGDD, AEPD). Sustituye a `privacy-legal` para usuarios en España. → [README del plugin](proteccion-datos/README.md)
+> - 🟡 **`mercantil`** (a partir de `commercial-legal`) — siguiente en la cola de localización.
+> - ⏳ El resto de plugins permanecen en su versión original en inglés mientras se localizan.
+>
+> **Fuentes y glosario compartidos:** [`references/fuentes-oficiales-espana.md`](references/fuentes-oficiales-espana.md) · [`references/glosario-juridico-en-es.md`](references/glosario-juridico-en-es.md)
+>
+> **Base de datos Tirant Lo Blanch:** la integración con la base de datos de Tirant requiere **licencia/API oficial** y está sujeta al derecho *sui generis* sobre bases de datos (Directiva 96/9/CE). No se extrae contenido sin autorización; hasta cerrar licencia, los plugins se anclan en fuentes oficiales abiertas.
+>
+> Se conservan la licencia y la atribución originales de Anthropic. El aviso legal de abajo aplica igualmente: **cada salida es un borrador para revisión letrada, no asesoramiento jurídico.**
+
 Everything here is available **two ways from one source**: install it as a [Claude Cowork](https://claude.com/product/cowork) or [Claude Code](https://claude.com/product/claude-code) plugin, or deploy it through the [Claude Managed Agents API](https://docs.claude.com/en/api/managed-agents) behind your own workflow engine. Same system prompt, same skills — you choose where it runs.
 
 ## Getting started in Cowork

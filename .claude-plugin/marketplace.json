@@ -1,11 +1,19 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "claude-for-legal",
-  "description": "Reference agents, skills, and data connectors for the legal workflows we see most — in-house commercial, privacy, product, corporate, employment, litigation, regulatory, AI governance, IP, and the learning side of the practice (law school clinics and students).",
+  "name": "claude-for-legal-es",
+  "description": "Adaptación a España de claude-for-legal (Anthropic): agentes, skills y conectores para los flujos de trabajo jurídicos más habituales, reanclados al Derecho español y de la UE (RGPD/LOPDGDD, BOE, CENDOJ, EUR-Lex, AEPD). Versión piloto en localización: el plugin de protección de datos ya está adaptado; el resto sigue en su versión original en inglés mientras se localiza.",
   "owner": {
-    "name": "Anthropic"
+    "name": "claude-for-legal-es (adaptación comunitaria · basado en claude-for-legal de Anthropic)"
   },
   "plugins": [
+    {
+      "name": "proteccion-datos",
+      "source": "./proteccion-datos",
+      "description": "Privacidad y protección de datos para España (RGPD + LOPDGDD): tria tratamientos para decidir si necesitan EIPD, genera evaluaciones de impacto, revisa contratos de encargo de tratamiento como responsable o encargado, y prepara la respuesta al ejercicio de derechos dentro del plazo legal. Anclado en AEPD, BOE y EUR-Lex.",
+      "author": {
+        "name": "claude-for-legal-es (adaptación comunitaria)"
+      }
+    },
     {
       "name": "commercial-legal",
       "source": "./commercial-legal",

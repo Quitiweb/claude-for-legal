@@ -1,0 +1,8 @@
+{
+  "name": "proteccion-datos",
+  "version": "0.1.0",
+  "description": "Privacidad y protección de datos para España (RGPD + LOPDGDD): tria tratamientos para decidir si necesitan EIPD, genera evaluaciones de impacto, revisa contratos de encargo de tratamiento como responsable o encargado, y prepara la respuesta al ejercicio de derechos dentro del plazo legal. Anclado en AEPD, BOE y EUR-Lex.",
+  "author": {
+    "name": "claude-for-legal-es (adaptación comunitaria)"
+  }
+}
