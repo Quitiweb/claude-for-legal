@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "DocuSign": {
+      "type": "http",
+      "url": "https://mcp.docusign.com/mcp",
+      "title": "DocuSign",
+      "description": "Búsqueda de acuerdos, seguimiento de estado y flujos de firma electrónica."
+    },
+    "Ironclad": {
+      "type": "http",
+      "url": "https://mcp.na1.ironcladapp.com/mcp",
+      "title": "Ironclad",
+      "description": "Busca en tu repositorio de contratos con lenguaje natural — vencimientos, cláusulas de resolución, contratos con proveedores — según tus permisos."
+    },
+    "iManage": {
+      "type": "http",
+      "url": "https://cloudimanage.com/mcp/work",
+      "title": "iManage",
+      "description": "Contenido gestionado en iManage conectado a Claude — los documentos permanecen en iManage, el acceso es por permisos y auditable."
+    },
+    "Slack": {
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp",
+      "title": "Slack",
+      "description": "Buscar mensajes, leer canales y localizar conversaciones."
+    },
+    "Google Drive": {
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1",
+      "title": "Google Drive",
+      "description": "Buscar, leer y obtener documentos de Google Drive."
+    }
+  },
+  "recommendedCategories": [
+    "contract-management",
+    "e-signature",
+    "legal-document-management",
+    "documents",
+    "chat",
+    "contract-review"
+  ]
+}

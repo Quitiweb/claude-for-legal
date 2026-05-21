@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "claude-for-legal-es",
-  "description": "Adaptación a España de claude-for-legal (Anthropic): agentes, skills y conectores para los flujos de trabajo jurídicos más habituales, reanclados al Derecho español y de la UE (RGPD/LOPDGDD, BOE, CENDOJ, EUR-Lex, AEPD). Versión piloto en localización: el plugin de protección de datos ya está adaptado; el resto sigue en su versión original en inglés mientras se localiza.",
+  "description": "Adaptación a España de claude-for-legal (Anthropic): agentes, skills y conectores para los flujos de trabajo jurídicos más habituales, reanclados al Derecho español y de la UE (RGPD/LOPDGDD, BOE, CENDOJ, EUR-Lex, AEPD). Versión piloto en localización: los plugins de protección de datos y mercantil ya están adaptados; el resto sigue en su versión original en inglés mientras se localiza.",
   "owner": {
     "name": "claude-for-legal-es (adaptación comunitaria · basado en claude-for-legal de Anthropic)"
   },
@@ -10,6 +10,14 @@
       "name": "proteccion-datos",
       "source": "./proteccion-datos",
       "description": "Privacidad y protección de datos para España (RGPD + LOPDGDD): tria tratamientos para decidir si necesitan EIPD, genera evaluaciones de impacto, revisa contratos de encargo de tratamiento como responsable o encargado, y prepara la respuesta al ejercicio de derechos dentro del plazo legal. Anclado en AEPD, BOE y EUR-Lex.",
+      "author": {
+        "name": "claude-for-legal-es (adaptación comunitaria)"
+      }
+    },
+    {
+      "name": "mercantil",
+      "source": "./mercantil",
+      "description": "Mercantil y contratos para España: revisa NDA, contratos con proveedores y SaaS contra el manual de la casa (lado comercial o de compras), vigila renovaciones y plazos de preaviso antes de que pasen, encamina los escalados al aprobador correcto y traduce las revisiones a resúmenes que negocio sí leerá. Anclado en Código de Comercio, CC, LCGC, Ley de Secretos Empresariales y Ley de Morosidad; fuentes en BOE, CENDOJ y EUR-Lex.",
       "author": {
         "name": "claude-for-legal-es (adaptación comunitaria)"
       }

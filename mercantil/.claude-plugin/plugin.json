@@ -1,0 +1,8 @@
+{
+  "name": "mercantil",
+  "version": "0.1.0",
+  "description": "Mercantil y contratos para España: revisa NDA, contratos con proveedores y SaaS contra el manual de la casa (lado comercial o de compras), vigila renovaciones y plazos de preaviso antes de que pasen, encamina los escalados al aprobador correcto y traduce las revisiones a resúmenes que negocio sí leerá. Anclado en Código de Comercio, CC, LCGC, Ley de Secretos Empresariales y Ley de Morosidad; fuentes en BOE, CENDOJ y EUR-Lex.",
+  "author": {
+    "name": "claude-for-legal-es (adaptación comunitaria)"
+  }
+}

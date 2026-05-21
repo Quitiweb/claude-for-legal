@@ -1,0 +1,31 @@
+# Registro de renovaciones
+#
+# Lo alimentan revision-saas (traspasos) y seguimiento-renovaciones (escaneo del CLM).
+# Cada entrada registra cuándo renueva un contrato y cuándo hay que preavisar para cancelar.
+#
+# El agente vigía-renovaciones (en preparación) lo lee semanalmente y publica lo que viene.
+
+renovaciones: []
+
+# Entrada de ejemplo (elimínala cuando haya datos reales):
+#
+# - contraparte: "Acme SaaS, S.L."
+#   acuerdo: "Contrato de suscripción a la plataforma Acme"
+#   fecha_firma: 2025-06-15
+#   fin_plazo_inicial: 2026-06-15
+#   fin_plazo_actual: 2026-06-15        # avanza tras cada prórroga; calcula los preavisos desde aquí
+#   mecanismo_renovacion: "prórroga tácita anual"
+#   dias_preaviso: 60
+#   metodo_preaviso: "correo"           # correo / portal / burofax / carta certificada / según contrato §X
+#   buffer_transito_dias: 0             # 0 electrónico; 3-5 burofax/certificado nacional; según contrato si se especifica
+#   preaviso_calendario: 2026-04-16     # fin_plazo_actual menos dias_preaviso
+#   preaviso_efectivo: 2026-04-16       # ajustado al último día hábil si procede
+#   enviar_antes_de: 2026-04-16         # preaviso_efectivo menos buffer_transito_dias — la fecha en que hay que ENVIAR
+#   nota_ajuste_habil: ""               # p. ej., "retrasado desde domingo 2026-11-01; verificar definición de día hábil del contrato"
+#   procedencia_preaviso: "[cálculo del modelo — verificar contra la cláusula de preaviso]"
+#   precio_renovacion: "tarifa vigente (sin tope)"
+#   valor_anual: 48000
+#   responsable_negocio: "jane@empresa.com"
+#   clm_id: "IC-12345"                  # si está conectado
+#   estado: "activo"                    # activo | cancelado | renovado | caducado
+#   notas: "Precio sin tope — revisar antes de renovar. Alternativas: X, Y."

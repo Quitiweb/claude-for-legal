@@ -10,7 +10,7 @@ Reference agents, skills, and data connectors for the legal workflows we see mos
 >
 > **Estado del piloto:**
 > - ✅ **`proteccion-datos`** — adaptado (RGPD + LOPDGDD, AEPD). Sustituye a `privacy-legal` para usuarios en España. → [README del plugin](proteccion-datos/README.md)
-> - 🟡 **`mercantil`** (a partir de `commercial-legal`) — siguiente en la cola de localización.
+> - ✅ **`mercantil`** — adaptado (Código de Comercio, CC, LCGC, Ley de Secretos Empresariales, Ley de Morosidad; Roma I / Bruselas I bis). Sustituye a `commercial-legal` para usuarios en España. La parte de protección de datos de un contrato se traspasa a `proteccion-datos`. → [README del plugin](mercantil/README.md)
 > - ⏳ El resto de plugins permanecen en su versión original en inglés mientras se localizan.
 >
 > **Fuentes y glosario compartidos:** [`references/fuentes-oficiales-espana.md`](references/fuentes-oficiales-espana.md) · [`references/glosario-juridico-en-es.md`](references/glosario-juridico-en-es.md)
